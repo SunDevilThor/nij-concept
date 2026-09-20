@@ -117,8 +117,6 @@
     lbImg.src = img.src;
     lbImg.alt = img.alt;
     var tags = item.getAttribute("data-tag") || "";
-    var healed = item.getAttribute("data-healed");
-    if (healed) tags += " · " + healed;
     lbCaption.innerHTML = "";
     lbCaption.appendChild(document.createTextNode(item.getAttribute("data-caption") || ""));
     var tagLine = document.createElement("span");
